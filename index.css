@@ -7,7 +7,7 @@ body {
 }
 #Logo img{
     padding-top: 11px;
-    width: 20%;
+    width: 22%;
     height: auto;
 }
 @media screen and (max-width: 768px) {
@@ -96,7 +96,7 @@ hr {
 
 @media screen and (min-width: 769px) {
     .ServicesPhone {
-      display: none;
+        display: none;
     }
     .part3{
         display: flex;
@@ -219,9 +219,9 @@ hr {
 
 @media screen and (min-width: 769px) {
     .AboutPhone {
-      display: none;
+    display: none;
     }
-  }
+}
 .About{
     display: flex;
     flex-direction: row;
@@ -301,6 +301,63 @@ hr {
     }
 }
 
+/* ---------------------------------------------------------- */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 12px; /* Adjust the gap between images */
+    margin-left: 2.5in; /* Add left margin of 5 inches */
+    margin-right: 2.5in; /* Add right margin of 5 inches */
+    margin-top: 75px;
+}
+
+.image-grid img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Add pointer cursor for clickable images */
+}
+
+/* Styles for modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.9); /* Black with opacity */
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%; /* Adjust modal width as needed */
+    max-width: 600px; /* Maximum width of the modal */
+}
+.modal-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* ---------------------------------------------------------- */
+
+@media screen and (min-width: 769px) {
+    .SeeMore {
+        display: inline-block;
+        margin: 75px;
+        padding: 10px 25px;
+        border: 1px solid black;
+        font-family: 'Quicksand', sans-serif;
+        text-decoration: none; /* Remove underline */
+        color: black; /* Link text color */
+        background-color: white; /* Link background color */
+        font-size: large;
+        margin-left: 46%;
+    }
+}
 
 /* ---------------------------------------------------------- */
 
