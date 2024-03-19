@@ -3,6 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel = "stylesheet" type = "text/css" href = "index.css">
+        <script type = "text/javascript" src = "index.js"> </script>
         <title> AL&M </title>
 
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
@@ -11,7 +12,7 @@
     </head>
     <body>
         <div class = "Alonso"> 
-            <a id = "Logo"> <img src = "Alonso'sLogo.png" > </a>
+            <a id = "Logo"> <img src = "Alonso'sLogo2.jpg" > </a>
         </div>
 
         <hr> 
@@ -76,7 +77,7 @@
         <div class="top">
             <a href="tel:5105700447" id="Number"> 510 570 0447</a>
             <a href="" id="Home">Home</a>
-            <a href="" id="OurWork">Our Work</a>
+            <a href = "OurWork.html" id="OurWork">Our Work</a>
             <a href="https://www.instagram.com/alonso_lawncare_junkremoval/?utm_source=qr"
             target="_blank" id="IgImg"><img src="IgLogo.png"></a>
             <a href="https://www.facebook.com/Alonso.Lawncare.JunkRemoval?mibextid=JRoKGi"
@@ -145,6 +146,28 @@
             </div>
         </div>
 
+        <div class="image-grid">
+            <!-- Row 1 -->
+            <img src="img1.jpg" alt="Image 1" onclick="openModal('img1.2.jpg')">
+            <img src="img2.jpg" alt="Image 2" onclick="openModal('img2.jpg')">
+            <img src="img3.jpg" alt="Image 3" onclick="openModal('img3.jpg')">
+            <!-- Row 2 -->
+            <img src="img4.jpg" alt="Image 4" onclick="openModal('img4.2.jpg')">
+            <img src="img5.jpg" alt="Image 5" onclick="openModal('img5.2.jpg')">
+            <img src="img6.jpg" alt="Image 6" onclick="openModal('img6.2.jpg')">
+            <!-- Row 3 -->
+            <img src="img7.jpg" alt="Image 7" onclick="openModal('img7.2.jpg')">
+            <img src="img8.jpg" alt="Image 8" onclick="openModal('img8.2.jpg')">
+            <img src="img9.jpg" alt="Image 9" onclick="openModal('img9.2.jpg')">
+            <!-- Add more images here for additional rows -->
+        </div>
+        <div id="myModal" class="modal" onclick="closeModal()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImg">
+        </div>
+    
+        <a href = "OurWork.html" class = "SeeMore"> See More</a>
+        
 
 
         <div class = "Info">
